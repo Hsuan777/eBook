@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html data-theme="myTheme" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/imgs/headIcon/headIcon1.png" type="image/x-icon" />
+
+  <!-- swiper CDN Css  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/fd445843a0.js" crossorigin="anonymous"></script>
+
+  <!-- aos Core CSS CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- swiper Css -->
+  <link rel="stylesheet" href="./swiperStyle.css">
+  <title>E Book</title>
+
+
+</head>
+
+<body class="bg-cream text-brown">
+  <!-- navbar -->
+  <nav class="container navbar">
+    <div class="navbar-start">
+      <img class="w-12 " src="/imgs/logo.png" alt="...">
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal p-0">
+        <li><a><span class="material-icons">local_fire_department</span>最新熱門</a></li>
+        <li><a><span class="material-icons">add_circle_outline</span>我的書單</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end flex-none gap-2">
+      <!-- todo input 點擊顏色要換 -->
+      <div class="form-control text-white">
+        <input type="text" placeholder="搜尋"
+          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:ring-0 focus:outline-0" />
+      </div>
+      <div class="dropdown dropdown-end ">
+        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img src="https://placeimg.com/80/80/people" />
+          </div>
+        </label>
+        <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-cream rounded-box w-52">
+          <li><a>最新熱門</a></li>
+          <li><a>我的書單</a></li>
+          <li><a>我的帳號</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner -->
+  <!-- todo 高度沒修好 -->
+  <section class="hero min-h-screen h-[456px] xl:w-5/6 xl:h-[679px] "
+    style="background-image: url(/imgs/temp/banner.jpg);">
+    <div class="hero-overlay bg-opacity-60"></div>
+  </section>
+  <div class="container  py-2">
+    <div class="max-w-md">
+      <h1 class="text-3xl font-bold">生活是無以名狀的碎片</h1>
+      <p class="py-6">無論昨天是精采還是暗淡，無論明天是閃亮還是慌亂，我擁有的就是現在。
+        此時此刻，我就在這裡。沒有更好也沒有更壞，沒有偶然也沒有幸然。</p>
+      <div class="btns">
+        <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
+            class="material-icons mr-2">auto_stories</span>翻來看看</button>
+        <button
+          class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
+            class="material-icons mr-2">read_more</span>了解更多</button>
+      </div>
+    </div>
+  </div>
+  <!-- todo 要修一下 -->
+  <!-- 本週排行榜 -->
+  <section class="bg-creamWhite  py-5">
+    <div class="container py-2 ">
+      <ul>
+        <h1 class="text-xl">/ 本週 TOP 排行榜 /</h1>
+        <li>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </li>
+      </ul>
+      <br>
+      <ul class="py-3 overflow-x-hidden">
+        <h1 class="text-xl">/ 測試版 /</h1>
+        <li>
+          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide text-center">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book1.webp" alt="book1" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book2.webp" alt="book2" />
+                </div>
+
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book3.webp" alt="book3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book4.webp" alt="book4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book5.webp" alt="book5" />
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </li>
+      </ul>
+      <h1 class="text-xl">/ 本月 TOP 排行榜 /</h1>
+      <ul>
+        <li>
+          <div class="flex">
+
+
+          </div>
+
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 書籍介紹 -->
+  <section class="container py-5 ">
+    <div class="content-center">
+      <!-- 現代文學 -->
+      <ul role="list">
+        <li class="group/item ">
+          <span class="text-xl" data-aos="fade-up" data-aos-duration="3000">現代文學</span>
+          <a class="group/edit invisible group-hover/item:visible" href="">
+            <span class=" group-hover/edit:text-secondary text-xs">探索全部 > </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="py-3 overflow-x-hidden">
+        <li>
+          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide text-center">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book1.webp" alt="book1" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book2.webp" alt="book2" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book3.webp" alt="book3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book4.webp" alt="book4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book5.webp" alt="book5" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book2.webp" alt="book2" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book3.webp" alt="book3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book4.webp" alt="book4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book5.webp" alt="book5" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </li>
+      </ul>
+      <!-- 心理勵志 -->
+      <ul role="list">
+        <li class="group/item ">
+          <span class="text-xl" data-aos="fade-up" data-aos-duration="3000">心理勵志</span>
+          <a class="group/edit invisible group-hover/item:visible" href="">
+            <span class=" group-hover/edit:text-secondary text-xs ">探索全部 > </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="py-3 overflow-x-hidden">
+        <li>
+          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide text-center">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book1.webp" alt="book1" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book2.webp" alt="book2" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book3.webp" alt="book3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book4.webp" alt="book4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book5.webp" alt="book5" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book2.webp" alt="book2" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book3.webp" alt="book3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book4.webp" alt="book4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book5.webp" alt="book5" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </li>
+      </ul>
+      <!-- 電腦資訊 -->
+      <ul role="list">
+        <li class="group/item ">
+          <span class="text-xl" data-aos="fade-up" data-aos-duration="3000">電腦資訊</span>
+          <a class="group/edit invisible group-hover/item:visible" href="">
+            <span class=" group-hover/edit:text-secondary text-xs ">探索全部 > </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="py-3 overflow-x-hidden">
+        <li>
+          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide text-center">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book1.webp" alt="book1" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book2.webp" alt="book2" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book3.webp" alt="book3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book4.webp" alt="book4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book5.webp" alt="book5" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img class="" src="/imgs/temp/book2.webp" alt="book2" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book3.webp" alt="book3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book4.webp" alt="book4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+                  <img src="/imgs/temp/book5.webp" alt="book5" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </li>
+      </ul>
+      <!-- <div class="text-xl align-center">現代文學 <a href="" class="text-xs text-center material-icons"
+          data-aos="fade-right">探索全部
+          chevron_right</a>
+      </div>
+
+      <p class="text-xl">心理勵志 <a href="" class="text-xs text-center" data-aos="fade-right">探索全部 > </a>
+      </p>
+      <p class="text-xl">電腦資訊 <a href="" class="text-xs text-center">探索全部 > </a>
+      </p> -->
+    </div>
+    <!-- <ul role="list">
+      <li class="group/item ">
+        <span class="text-xl" data-aos="fade-up" data-aos-duration="3000">現代文學</span>
+        <a class="group/edit invisible group-hover/item:visible" href="">
+          <span class=" group-hover/edit:text-gray-700 text-xs">探索全部 > </span>
+        </a>
+      </li>
+    </ul> -->
+  </section>
+
+
+  <!-- 會員專屬 -->
+  <section class="bg-creamWhite  py-5">
+    <div class="container py-2 ">
+      <p class="text-xl">Hazel<span class="text-sm">，請繼續閱讀 </span></p>
+      <p class="text-xl">Hazel<span class="text-sm">，請繼續閱讀 </span></p>
+    </div>
+  </section>
+
+
+  <h1 class="text-xl">/ 測試版 /</h1>
+  <div class="card  bg-white ">
+    <figure class="your-element" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img class="w-[246px] h-[359px]"
+        src="https://kbimages1-a.akamaihd.net/7523f0c6-eafe-40ac-815a-9a922dbdb56e/353/569/90/False/4HfLmC0kZj2YgmeOtbKfdQ.jpg"
+        alt="Shoes" /></figure>
+    <div class="card-body border-t-2">
+      <h2 class="card-title ">
+        Glare effect
+      </h2>
+    </div>
+  </div>
+
+  <!-- 最新出版書籍 -->
+  <section class="bg-creamWhite2 py-5 section5">
+    <p class="text-center text-xl">最新出版書籍</p>
+    <!-- <div class="max-w-md mx-auto rounded-xl shadow-md  overflow-hidden">
+        <div class="card md:flex">
+          <div class="md:flex-shrink-0 shadow-xl">
+            <img class="h-48 w-full object-cover md:h-full " src="https://placeimg.com/400/225/arch"
+              alt="Man looking at item at a store">
+          </div>
+          <div class="card-body">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+            <h2 class="card-title">進擊的台劇</h2>
+            <p>從《紅衣小女孩》到《茶金》，<br>他們打造的台劇，很酷！</p>
+            <div class="card-actions justify-center pt-3">
+              <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
+                  class="material-icons mr-2">auto_stories</span>翻來看看</button>
+              <button
+                class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
+                  class="material-icons mr-2">read_more</span>了解更多</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <ul class="flex mt-5 flex-wrap justify-center items-end">
+      <li class="mx-6 mt-5">
+        <div class="max-w-md mx-auto overflow-hidden">
+          <div class="card md:flex  ">
+            <div
+              class="h-[360] w-[248px] md:flex-shrink-0 shadow-xl flex justify-center mx-auto border-b-2 border-stone-300">
+              <img class=""
+                src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
+                alt="Man looking at item at a store">
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">進擊的台劇</h2>
+              <p>故事 X 技術 X IP 放大<br>從《紅衣小女孩》到《茶金》，<br>他們打造的台劇，很酷！</p>
+              <div class="card-actions justify-center pt-3">
+                <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
+                    class="material-icons mr-2">auto_stories</span>翻來看看</button>
+                <button
+                  class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
+                    class="material-icons mr-2">read_more</span>了解更多</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="mx-6 mt-5">
+        <div class="max-w-md mx-auto overflow-hidden">
+          <div class="card md:flex">
+            <div
+              class="h-[360] w-[248px] md:flex-shrink-0 shadow-xl flex justify-center mx-auto border-b-2 border-stone-300">
+              <img class="object-cover "
+                src="https://kbimages1-a.akamaihd.net/55289222-67ac-41c7-b47d-ddaa214696e5/180/1000/False/NMNWDgJPpDKwOAnPB9_Syw.jpg"
+                alt="Man looking at item at a store">
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">未來還沒背書寫</h2>
+              <p>關鍵只有在於要怎麼寫。<br>他們開始時的噪音<br>將成為明日的派對。</p>
+              <div class="card-actions justify-center pt-3">
+                <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
+                    class="material-icons mr-2">auto_stories</span>翻來看看</button>
+                <button
+                  class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
+                    class="material-icons mr-2">read_more</span>了解更多</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="mx-6 mt-5">
+        <div class="max-w-md mx-auto overflow-hidden">
+          <div class="card md:flex">
+            <div
+              class="h-[360] w-[248px] md:flex-shrink-0 shadow-xl flex justify-center mx-auto border-b-2 border-stone-300">
+              <img class=" object-cover"
+                src="https://kbimages1-a.akamaihd.net/d11d625d-771d-4a57-91b5-02a81287776a/180/1000/False/ai-93.jpg"
+                alt="Man looking at item at a store">
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">人工智慧 最後的秘密</h2>
+              <p>權力、政治、人類的代價<br>科技產業和國家機器<br>如何聯手打造 AI神話？</p>
+              <div class="card-actions justify-center pt-3">
+                <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
+                    class="material-icons mr-2">auto_stories</span>翻來看看</button>
+                <button
+                  class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
+                    class="material-icons mr-2">read_more</span>了解更多</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- 書籍介紹 2-->
+  <section class="container py-5 ">
+    <div class="content-center">
+      <p class="text-xl">世界旅遊 <a href="" class="text-xs text-center">探索全部 > </a>
+      </p>
+      <p class="text-xl">居家料理 <a href="" class="text-xs text-center">探索全部 > </a>
+      </p>
+      <p class="text-xl">外文出版 <a href="" class="text-xs text-center">探索全部 > </a>
+      </p>
+    </div>
+    <div class="py-2 text-center">
+      <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary px-8 ">探索更多
+      </button>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="footer footer-center p-5  text-primary">
+    <!-- todo -->
+    <div>
+      <figure><img class="w-12" src="/imgs/logo2.png" alt="Shoes" /></figure>
+      <p class="font-bold tracking-widest">
+        知識就像內褲 <br />看不見但很重要
+      </p>
+      <p>Copyright © 2022 By readingNow - All right reserved. <span class="text-xs">僅學習作品用無商業行為</span></p>
+    </div>
+    <!-- social contact -->
+    <!-- <div>
+      <div class="grid grid-flow-col gap-4">
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg></a>
+      </div>
+    </div> -->
+  </footer>
+
+
+  <!-- <span class="material-icons text-primary">face</span> -->
+
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- vanilla-tilt -->
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <!-- <script src="./vanilla.js"></script> -->
+
+  <!-- aos.js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <script src="./all.js"></script>
+</body>
+
+</html>
